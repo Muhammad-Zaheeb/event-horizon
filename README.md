@@ -12,17 +12,9 @@ Every pixel traces a ray of light backwards through the curved spacetime of a Sc
 |---|---|---|
 | ![Einstein ring of the Milky Way](docs/ring.jpg) | ![Disk seen from above](docs/topdown.jpg) | ![The universe squeezed into one blueshifted disc](docs/horizon.jpg) |
 
-## Verified against general relativity
+## How the shadow arises
 
-The rendered shadow was measured from the image and compared with the exact analytic prediction (Synge's formula) for an observer hovering at 20 rₛ:
-
-| | Shadow angular radius |
-|---|---|
-| Exact GR prediction | 7.2740° |
-| Measured in the render | 7.2785° |
-| **Error** | **0.06%** |
-
-A renderer that ignored the observer's local frame would be 2.6% off.
+The size of the black hole's shadow is not drawn in; it follows directly from the physics the shader integrates. Light with an impact parameter below the critical value √27·M is captured by the black hole, and the photon sphere sits at r = 3M, which is 1.5 times the horizon radius r = 2M.
 
 ## Features
 
